@@ -27,7 +27,7 @@ const Hero = () => {
           
           <div className="space-y-4">
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
-              Hi, I'm <span className="bg-gradient-primary bg-clip-text text-transparent">Your Name</span>
+              Hi, I'm <span className="bg-gradient-primary bg-clip-text text-transparent">S N M HANUMANTHARAO</span>
             </h1>
             <h2 className="text-2xl md:text-3xl text-muted-foreground font-light">
               Data Engineer • Data Scientist • DevOps Engineer
