@@ -7,14 +7,14 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "your.email@example.com",
-      link: "mailto:your.email@example.com"
+      value: "saikukunuri513@gmail.com",
+      link: "mailto:saikukunuri513@gmail.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+91 XXXXX XXXXX",
-      link: "tel:+91XXXXXXXXXX"
+      value: "+91 8466026608",
+      link: "tel:+918466026608"
     },
     {
       icon: MapPin,
@@ -87,7 +87,7 @@ const Contact = () => {
               className="bg-gradient-primary hover:shadow-glow transition-all duration-300"
               asChild
             >
-              <a href="mailto:your.email@example.com">
+              <a href="mailto:saikukunuri513@gmail.com">
                 <Mail className="mr-2 h-5 w-5" />
                 Send Email
               </a>
