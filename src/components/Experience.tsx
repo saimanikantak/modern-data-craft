@@ -5,26 +5,23 @@ const Experience = () => {
   const education = [
     {
       degree: "Bachelor of Technology",
-      field: "Computer Science Engineering",
-      institution: "Your University Name",
+      field: "Electronic & Communication Engineering",
+      institution: "Sagi Rama Krishnam Raju Engineering College, Bhimavaram",
       year: "2020 - 2024",
-      description: "Graduated with honors, focusing on data structures, algorithms, machine learning, and cloud computing."
+      description:"Completed coursework in SQL, Python, data modeling, statistics, cloud computing, and database management systems. Gained hands-on experience in working with datasets, building ETL workflows, performing data analysis, and visualizing insights using tools like Excel, Power BI, and Python libraries."
+
     }
   ];
 
   const experience = [
     {
-      title: "Data Engineering Intern",
-      company: "Company Name",
-      duration: "Summer 2023",
-      description: "Developed ETL pipelines and optimized data workflows, reducing processing time by 40%."
+      title: " Quality Associate",
+      company: "Amazon",
+      duration: " june 2025 - present",
+      description: "Working as a Quality Associate in the LMAQ team at Amazon, where I review, validate, and analyze large datasets to ensure high accuracy standards. Utilize SQL, Excel, and internal analytical tools to track metrics, identify patterns, and uncover root causes of data inconsistencies. Contribute to process optimization by generating reports, monitoring KPIs, and providing data-driven insights to improve workflow efficiency and reduce error rates."
+
     },
-    {
-      title: "Academic Projects",
-      company: "University",
-      duration: "2020 - 2024",
-      description: "Led multiple projects in data science, ML model development, and cloud infrastructure automation."
-    }
+    
   ];
 
   return (
