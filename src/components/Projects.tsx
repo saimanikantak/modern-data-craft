@@ -35,7 +35,7 @@ const Projects = () => {
     {
   title: "Customer Behavior Prediction Model",
   description: "Developed and deployed a machine learning model to predict customer churn using classification algorithms. Implemented data preprocessing, feature engineering, and model evaluation with real-world deployment using Streamlit.",
-  tags: ["Python", "Machine Learning", "Scikit-Learn", "EDA", "Streamlit"],
+  tags: ["Python", "Machine Learning", "Scikit-Learn", "EDA", "Streamlit "],
       image: mlSystemImg,
   github: "#",
   demo: "#"
