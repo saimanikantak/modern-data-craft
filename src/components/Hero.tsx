@@ -10,45 +10,16 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center px-4 py-20 relative overflow-hidden">
-      {/* Animated gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-accent/5 to-background" />
-      
-      {/* Floating geometric shapes */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent" />
       
       <div className="container mx-auto max-w-6xl relative z-10">
         <div className="text-center space-y-8 animate-fade-in">
           <div className="flex justify-center mb-8">
-            <div className="relative group">
-              {/* Animated blob background */}
-              <div className="absolute -inset-4 bg-gradient-primary opacity-30 blur-2xl animate-pulse group-hover:opacity-50 transition-opacity duration-500" 
-                   style={{ 
-                     borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%',
-                     animation: 'pulse 3s ease-in-out infinite'
-                   }} />
-              
-              {/* Rotating gradient ring */}
-              <div className="absolute -inset-3 bg-gradient-to-r from-primary via-accent to-primary rounded-full opacity-50 blur-xl group-hover:animate-spin" 
-                   style={{ animationDuration: '8s' }} />
-              
-              {/* Profile image with morphing shape */}
-              <div className="relative overflow-hidden group-hover:shadow-2xl transition-shadow duration-500"
-                   style={{ 
-                     borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%',
-                     width: '320px',
-                     height: '320px'
-                   }}>
-                <img 
-                  src={profileImage} 
-                  alt="Profile" 
-                  className="w-full h-full object-cover transform transition-all duration-700 group-hover:scale-110 group-hover:rotate-2"
-                />
-                
-                {/* Overlay gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              </div>
-            </div>
+            <img 
+              src={profileImage} 
+              alt="Profile" 
+              className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-primary/20 shadow-xl"
+            />
           </div>
           
           <div className="space-y-4">
