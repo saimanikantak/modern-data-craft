@@ -25,13 +25,13 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "https://www.linkedin.com/in/sai-manikanta-kukunoori-bab61123b/",
+      value: "linkedin.com/sai-manikanta-kukunoori",
       link: "https://www.linkedin.com/in/sai-manikanta-kukunoori-bab61123b/"
     },
     {
       icon: Github,
       label: "GitHub",
-      value: "https://github.com/saimanikantak",
+      value: "github.com/saimanikantak",
       link: "https://github.com/saimanikantak"
     }
   ];
