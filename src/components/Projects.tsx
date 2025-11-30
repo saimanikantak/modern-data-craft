@@ -1,6 +1,10 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
+import dataPipelineImg from "@/assets/project-data-pipeline.jpg";
+import mlSystemImg from "@/assets/project-ml-system.jpg";
+import cicdImg from "@/assets/project-cicd.jpg";
+import dashboardImg from "@/assets/project-dashboard.jpg";
 
 const Projects = () => {
   const projects = [
@@ -8,6 +12,7 @@ const Projects = () => {
       title: "Real-time Data Pipeline",
       description: "Built a scalable ETL pipeline using Apache Kafka and Spark for processing 1M+ events per day with real-time analytics capabilities.",
       tags: ["Apache Kafka", "Spark", "Python", "AWS"],
+      image: dataPipelineImg,
       github: "#",
       demo: "#"
     },
@@ -15,6 +20,7 @@ const Projects = () => {
       title: "ML Prediction System",
       description: "Developed a machine learning model for predictive analytics with 92% accuracy, deployed using Docker and Kubernetes for scalability.",
       tags: ["Python", "TensorFlow", "Docker", "Kubernetes"],
+      image: mlSystemImg,
       github: "#",
       demo: "#"
     },
@@ -22,6 +28,7 @@ const Projects = () => {
       title: "CI/CD Infrastructure",
       description: "Automated deployment pipeline using Jenkins, Terraform, and AWS, reducing deployment time by 70% and improving reliability.",
       tags: ["Jenkins", "Terraform", "AWS", "Docker"],
+      image: cicdImg,
       github: "#",
       demo: "#"
     },
@@ -29,6 +36,7 @@ const Projects = () => {
       title: "Data Visualization Dashboard",
       description: "Created interactive dashboards using Python and Tableau for business intelligence, serving 500+ daily users.",
       tags: ["Python", "Tableau", "SQL", "Power BI"],
+      image: dashboardImg,
       github: "#",
       demo: "#"
     }
@@ -50,10 +58,17 @@ const Projects = () => {
           {projects.map((project, index) => (
             <Card 
               key={index}
-              className="p-6 bg-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-glow flex flex-col animate-fade-in"
+              className="overflow-hidden bg-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-glow flex flex-col animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="flex-1">
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                />
+              </div>
+              <div className="flex-1 p-6">
                 <h3 className="text-2xl font-semibold mb-3">{project.title}</h3>
                 <p className="text-muted-foreground mb-4 leading-relaxed">
                   {project.description}
@@ -71,7 +86,7 @@ const Projects = () => {
                 </div>
               </div>
 
-              <div className="flex gap-3">
+              <div className="flex gap-3 px-6 pb-6">
                 <Button 
                   variant="outline" 
                   size="sm"
