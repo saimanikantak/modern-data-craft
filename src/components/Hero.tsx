@@ -10,17 +10,26 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center px-4 py-20 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/90 to-background/95" />
+      
+      {/* Large Profile Image Overlay */}
+      <div className="absolute inset-0 flex items-center justify-center opacity-20">
+        <img 
+          src={profileImage} 
+          alt="Profile Background" 
+          className="w-full h-full object-cover"
+        />
+      </div>
       
       <div className="container mx-auto max-w-6xl relative z-10">
         <div className="text-center space-y-8 animate-fade-in">
           <div className="flex justify-center mb-8">
             <div className="relative group">
-              <div className="absolute -inset-1 bg-gradient-primary rounded-full blur-lg opacity-75 group-hover:opacity-100 transition duration-500"></div>
+              <div className="absolute -inset-2 bg-gradient-primary rounded-full blur-2xl opacity-75 group-hover:opacity-100 transition duration-500"></div>
               <img 
                 src={profileImage} 
                 alt="Profile" 
-                className="relative w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-background shadow-xl transform transition-all duration-500 group-hover:scale-105 group-hover:rotate-3"
+                className="relative w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-8 border-background shadow-2xl transform transition-all duration-500 group-hover:scale-105 group-hover:rotate-3"
               />
             </div>
           </div>
