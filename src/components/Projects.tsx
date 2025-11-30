@@ -42,7 +42,7 @@ const Projects = () => {
             Featured <span className="bg-gradient-primary bg-clip-text text-transparent">Projects</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Real-world applications showcasing data engineering, ML, and DevOps expertise
+            Real-world applications showcasing data engineering, ML, and analytic Expertise
           </p>
         </div>
 
