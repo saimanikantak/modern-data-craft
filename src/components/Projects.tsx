@@ -9,12 +9,11 @@ import dashboardImg from "@/assets/project-dashboard.jpg";
 const Projects = () => {
   const projects = [
     {
-      title: "Real-time Data Pipeline",
-      description: "Built a scalable ETL pipeline using Apache Kafka and Spark for processing 1M+ events per day with real-time analytics capabilities.",
-      tags: ["Apache Kafka", "Spark", "Python", "AWS"],
-      image: dataPipelineImg,
-      github: "#",
-      demo: "#"
+     title: "Cloud-Based Data Analytics Pipeline with AWS",
+  description: "Designed and deployed a fully automated data pipeline using AWS services to process streaming and batch datasets. Leveraged AWS Glue for ETL, S3 for data storage, and Athena for querying processed data. Built interactive dashboards in Amazon QuickSight to visualize KPIs and business insights in real time.",
+  tags: ["AWS S3", "AWS Glue", "AWS Lambda", "AWS Athena", "AWS QuickSight", "Python", "ETL", "Data Pipeline"],
+  github: "#",
+  demo: "#"
     },
     {
       title: "ML Prediction System",
@@ -25,13 +24,12 @@ const Projects = () => {
       demo: "#"
     },
     {
-      title: "CI/CD Infrastructure",
-      description: "Automated deployment pipeline using Jenkins, Terraform, and AWS, reducing deployment time by 70% and improving reliability.",
-      tags: ["Jenkins", "Terraform", "AWS", "Docker"],
-      image: cicdImg,
-      github: "#",
-      demo: "#"
-    },
+  title: "Customer Churn Analysis & Business Strategy",
+  description: "Performed root cause analysis on customer churn data using SQL and analytical frameworks. Delivered KPIs, stakeholder report, and recommendations that could potentially reduce churn by 18% based on pattern analysis and segmentation insights.",
+  tags: ["Business Analytics", "SQL", "Excel", "KPIs", "Requirement Documentation"],
+  github: "#",
+  demo: "#"
+},
     {
       title: "Data Visualization Dashboard",
       description: "Created interactive dashboards using Python and Tableau for business intelligence, serving 500+ daily users.",
