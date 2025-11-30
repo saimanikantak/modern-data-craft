@@ -8,12 +8,10 @@ const Skills = () => {
       icon: Database,
       skills: [
         "Apache Spark",
-        "Apache Kafka",
-        "Airflow",
         "ETL Pipelines",
         "SQL & NoSQL",
         "Data Warehousing",
-        "Snowflake",
+        "AWS Redshift",
         "BigQuery"
       ]
     },
@@ -23,28 +21,15 @@ const Skills = () => {
       skills: [
         "Python (Pandas, NumPy)",
         "Machine Learning",
-        "TensorFlow & PyTorch",
+        "TensorFlow",
         "Statistical Analysis",
         "Data Visualization",
         "Scikit-learn",
         "Jupyter Notebooks",
-        "A/B Testing"
+        
       ]
     },
-    {
-      title: "DevOps",
-      icon: Server,
-      skills: [
-        "Docker & Kubernetes",
-        "CI/CD (Jenkins, GitLab)",
-        "AWS/Azure/GCP",
-        "Terraform",
-        "Ansible",
-        "Linux Administration",
-        "Monitoring (Prometheus)",
-        "Shell Scripting"
-      ]
-    },
+  
     {
       title: "Programming",
       icon: Code,
@@ -52,11 +37,7 @@ const Skills = () => {
         "Python",
         "SQL",
         "Bash/Shell",
-        "Java",
-        "Scala",
-        "R",
-        "JavaScript",
-        "Go"
+        
       ]
     },
     {
@@ -75,14 +56,10 @@ const Skills = () => {
       title: "Tools & Platforms",
       icon: Container,
       skills: [
-        "Databricks",
-        "Tableau",
+       
+    "AWS Quicksight",
         "Power BI",
-        "Grafana",
-        "ELK Stack",
-        "Redis",
-        "RabbitMQ",
-        "Apache Hadoop"
+        
       ]
     }
   ];
