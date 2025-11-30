@@ -36,7 +36,7 @@ const Skills = () => {
       skills: [
         "Python",
         "SQL",
-        "Bash/Shell",
+        "Shell",
         
       ]
     },
@@ -48,8 +48,7 @@ const Skills = () => {
         "GitHub",
         "GitLab",
         "Bitbucket",
-        "Git Workflows",
-        "Code Review"
+        
       ]
     },
     {
@@ -59,6 +58,8 @@ const Skills = () => {
        
     "AWS Quicksight",
         "Power BI",
+        "visual studio code",
+        "vibe Coding"
         
       ]
     }
