@@ -30,12 +30,12 @@ const Hero = () => {
               Hi, I'm <span className="bg-gradient-primary bg-clip-text text-transparent">S N M HANUMANTHARAO</span>
             </h1>
             <h2 className="text-2xl md:text-3xl text-muted-foreground font-light">
-              Data Engineer • Data Scientist • DevOps Engineer
+              Data Engineer • Data Analyst • Bussiness Analyst
             </h2>
           </div>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            B.Tech Graduate 2024 passionate about building scalable data pipelines, 
+            B.Tech Graduate 2024 passionate about building data pipelines, dashboards
             deriving insights from complex datasets, and automating infrastructure.
           </p>
 
@@ -61,7 +61,7 @@ const Hero = () => {
 
           <div className="flex gap-6 justify-center pt-8">
             <a 
-              href="https://github.com" 
+              href="https://github.com/saimanikantak" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors duration-300"
@@ -69,7 +69,7 @@ const Hero = () => {
               <Github className="h-6 w-6" />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/sai-manikanta-kukunoori-bab61123b/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors duration-300"
