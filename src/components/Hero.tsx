@@ -56,18 +56,19 @@ const Hero = () => {
                 <Mail className="mr-2 h-5 w-5" />
                 Get In Touch
               </Button>
-              
+              <a href={resumePdf} download="kukunoorisnmhanumantharao (23).pdf">
               <Button 
                 size="lg" 
                 variant="outline" 
                 className="border-primary/50 hover:bg-primary/10 transition-all duration-300"
                 asChild
               >
-                <a href={resumePdf} download="kukunoorisnmhanumantharao (23).pdf">
+                
                   <Download className="mr-2 h-5 w-5" />
                   Download Resume
-                </a>
+               
               </Button>
+                 </a>
             </div>
 
             <div className="flex gap-6 justify-center md:justify-start pt-4">
