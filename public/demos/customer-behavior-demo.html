@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Behavior Prediction Demo</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 800px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 { color: #fa709a; margin-bottom: 20px; }
+        .demo-section { margin: 30px 0; }
+        .metric { 
+            display: inline-block;
+            background: #fff5f7;
+            padding: 15px 25px;
+            margin: 10px;
+            border-radius: 10px;
+            border-left: 4px solid #fa709a;
+        }
+        .metric-value { font-size: 32px; font-weight: bold; color: #fa709a; }
+        .metric-label { color: #666; font-size: 14px; }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .tech-badge {
+            background: #fa709a;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Customer Behavior Prediction</h1>
+        <p style="color: #666; margin-bottom: 30px;">
+            ML-powered customer churn prediction with interactive Streamlit deployment
+        </p>
+        
+        <div class="demo-section">
+            <h2 style="color: #333; margin-bottom: 15px;">Model Metrics</h2>
+            <div class="metric">
+                <div class="metric-value">87%</div>
+                <div class="metric-label">Model Accuracy</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">0.91</div>
+                <div class="metric-label">F1 Score</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">15+</div>
+                <div class="metric-label">Features Engineered</div>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2 style="color: #333; margin-bottom: 15px;">Technology Stack</h2>
+            <div class="tech-stack">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Scikit-Learn</span>
+                <span class="tech-badge">Pandas</span>
+                <span class="tech-badge">Streamlit</span>
+                <span class="tech-badge">Matplotlib</span>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2 style="color: #333; margin-bottom: 15px;">Project Highlights</h2>
+            <ul style="color: #666; line-height: 2; padding-left: 20px;">
+                <li>Comprehensive EDA with data visualization</li>
+                <li>Advanced feature engineering techniques</li>
+                <li>Multiple classification algorithms tested</li>
+                <li>Hyperparameter tuning for optimization</li>
+                <li>Interactive Streamlit web application</li>
+                <li>Real-time prediction capabilities</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

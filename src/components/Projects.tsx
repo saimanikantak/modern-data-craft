@@ -12,9 +12,9 @@ const Projects = () => {
      title: "Cloud-Based Data Analytics Pipeline with AWS",
   description: "Designed and deployed a fully automated data pipeline using AWS services to process streaming and batch datasets. Leveraged AWS Glue for ETL, S3 for data storage, and Athena for querying processed data. Built interactive dashboards in Amazon QuickSight to visualize KPIs and business insights in real time.",
   tags: ["AWS S3", "AWS Glue", "AWS Lambda", "AWS Athena", "AWS QuickSight", "Python", "ETL", "Data Pipeline"],
-       image: mlSystemImg,
+       image: dataPipelineImg,
   github: "#",
-  demo: "#"
+  demo: "/demos/data-pipeline-demo.html"
     },
     {
       title: "ML Prediction System",
@@ -22,23 +22,23 @@ const Projects = () => {
       tags: ["Python", "TensorFlow", "Docker", "Kubernetes"],
       image: mlSystemImg,
       github: "#",
-      demo: "#"
+      demo: "/demos/ml-prediction-demo.html"
     },
     {
   title: "Customer Churn Analysis & Business Strategy",
   description: "Performed root cause analysis on customer churn data using SQL and analytical frameworks. Delivered KPIs, stakeholder report, and recommendations that could potentially reduce churn by 18% based on pattern analysis and segmentation insights.",
   tags: ["Business Analytics", "SQL", "Excel", "KPIs", "Requirement Documentation"],
-       image: mlSystemImg,
+       image: dashboardImg,
   github: "#",
-  demo: "#"
+  demo: "/demos/churn-analysis-demo.html"
 },
     {
   title: "Customer Behavior Prediction Model",
   description: "Developed and deployed a machine learning model to predict customer churn using classification algorithms. Implemented data preprocessing, feature engineering, and model evaluation with real-world deployment using Streamlit.",
   tags: ["Python", "Machine Learning", "Scikit-Learn", "EDA", "Streamlit "],
-      image: mlSystemImg,
+      image: cicdImg,
   github: "#",
-  demo: "#"
+  demo: "/demos/customer-behavior-demo.html"
 }
 
   ];
