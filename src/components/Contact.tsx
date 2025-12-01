@@ -19,7 +19,7 @@ const Contact = () => {
     {
       icon: MapPin,
       label: "Location",
-      value: "Your City, India",
+      value: "Hyderabad, India",
       link: null
     },
     {
