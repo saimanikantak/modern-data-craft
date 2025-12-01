@@ -16,13 +16,17 @@ const Hero = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center animate-fade-in">
           {/* Profile Image Side */}
           <div className="flex justify-center md:justify-end">
-            <div className="relative">
-              <img 
-                src={profileImage} 
-                alt="Profile" 
-                className="w-72 h-72 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px] rounded-2xl object-cover shadow-2xl border-4 border-primary/20"
-              />
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-primary/20 to-transparent pointer-events-none" />
+            <div className="relative animate-float">
+              <div className="animated-border">
+                <div className="animated-border-inner">
+                  <img 
+                    src={profileImage} 
+                    alt="Profile" 
+                    className="w-72 h-72 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px] rounded-2xl object-cover shadow-2xl transition-transform duration-500 hover:scale-105"
+                  />
+                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-primary/20 to-transparent pointer-events-none" />
+                </div>
+              </div>
             </div>
           </div>
 

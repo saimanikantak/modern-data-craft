@@ -43,6 +43,32 @@ All colors MUST be HSL.
     --glow: 0 0 20px hsl(189 94% 43% / 0.3);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  @keyframes rotate-gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .animated-border {
+    position: relative;
+    padding: 6px;
+    background: linear-gradient(90deg, hsl(189 94% 43%), hsl(210 90% 50%), hsl(270 90% 50%), hsl(189 94% 43%));
+    background-size: 300% 300%;
+    animation: rotate-gradient 4s ease infinite;
+    border-radius: 1rem;
+  }
+
+  .animated-border-inner {
+    background: hsl(var(--background));
+    border-radius: calc(1rem - 6px);
+  }
 }
 
 @layer base {
