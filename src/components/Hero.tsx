@@ -9,29 +9,28 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 py-20 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent" />
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      {/* Full-screen background image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${profileImage})` }}
+      />
       
-      <div className="container mx-auto max-w-6xl relative z-10">
+      {/* Overlay for better text readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background/90" />
+      
+      <div className="container mx-auto max-w-6xl relative z-10 px-4 py-20">
         <div className="text-center space-y-8 animate-fade-in">
-          <div className="flex justify-center mb-8">
-            <img 
-              src={profileImage} 
-              alt="Profile" 
-              className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-primary/20 shadow-xl"
-            />
-          </div>
-          
           <div className="space-y-4">
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tight drop-shadow-lg">
               Hi, I'm <span className="bg-gradient-primary bg-clip-text text-transparent">S N M HANUMANTHARAO</span>
             </h1>
-            <h2 className="text-2xl md:text-3xl text-muted-foreground font-light">
+            <h2 className="text-2xl md:text-3xl text-foreground font-light drop-shadow-md">
               Data Engineer • Data Analyst • Bussiness Analyst
             </h2>
           </div>
 
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-foreground/90 max-w-2xl mx-auto leading-relaxed drop-shadow-md">
             B.Tech Graduate 2024 passionate about building data pipelines, dashboards
             deriving insights from complex datasets, and automating infrastructure.
           </p>
@@ -49,7 +48,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-primary/50 hover:bg-primary/10 transition-all duration-300"
+              className="border-primary/50 hover:bg-primary/10 transition-all duration-300 backdrop-blur-sm"
             >
               <Download className="mr-2 h-5 w-5" />
               Download Resume
@@ -61,7 +60,7 @@ const Hero = () => {
               href="https://github.com/saimanikantak" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors duration-300"
+              className="text-foreground/80 hover:text-primary transition-colors duration-300 drop-shadow-md"
             >
               <Github className="h-6 w-6" />
             </a>
@@ -69,13 +68,13 @@ const Hero = () => {
               href="https://www.linkedin.com/in/sai-manikanta-kukunoori-bab61123b/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors duration-300"
+              className="text-foreground/80 hover:text-primary transition-colors duration-300 drop-shadow-md"
             >
               <Linkedin className="h-6 w-6" />
             </a>
             <a 
               href="mailto:saikukunuri513@gmail.com"
-              className="text-muted-foreground hover:text-primary transition-colors duration-300"
+              className="text-foreground/80 hover:text-primary transition-colors duration-300 drop-shadow-md"
             >
               <Mail className="h-6 w-6" />
             </a>
@@ -83,10 +82,10 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-float">
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-float z-10">
         <button 
           onClick={() => scrollToSection("skills")}
-          className="text-muted-foreground hover:text-primary transition-colors"
+          className="text-foreground/80 hover:text-primary transition-colors drop-shadow-md"
         >
           <svg 
             className="h-6 w-6" 
