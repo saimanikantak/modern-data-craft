@@ -63,7 +63,7 @@ const Hero = () => {
                 className="border-primary/50 hover:bg-primary/10 transition-all duration-300"
                 asChild
               >
-                <a href={resumePdf} download="SNM_Hanumantharao_Resume.pdf">
+                <a href={resumePdf} download="kukunoorisnmhanumantharao (23).pdf">
                   <Download className="mr-2 h-5 w-5" />
                   Download Resume
                 </a>
