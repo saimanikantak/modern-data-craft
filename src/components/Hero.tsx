@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Download } from "lucide-react";
 import profileImage from "@/assets/myimage.jpg";
-import resumePdf from "@/assets/kukunoorisnmhanumantharao (23).pdf";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -62,7 +61,7 @@ const Hero = () => {
                 className="border-primary/50 hover:bg-primary/10 transition-all duration-300"
                 asChild
               >
-                <a href={resumePdf} download="kukunoorisnmhanumantharao (23).pdf">
+                <a href="/resume.pdf" download="SNM_Hanumantharao_Resume.pdf">
                   <Download className="mr-2 h-5 w-5" />
                   Download Resume
                 </a>
